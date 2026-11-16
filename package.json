@@ -1,0 +1,45 @@
+{
+  "name": "dsh-sidebar-direct-settings",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Replace the sidebar account More menu with a direct Settings button.",
+  "keywords": [
+    "dsh",
+    "bundle",
+    "sidebar",
+    "settings",
+    "client-plugin"
+  ],
+  "license": "MIT",
+  "author": "LunYaoli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunyaoli/dsh-sidebar-direct-settings.git"
+  },
+  "homepage": "https://github.com/lunyaoli/dsh-sidebar-direct-settings#readme",
+  "bugs": {
+    "url": "https://github.com/lunyaoli/dsh-sidebar-direct-settings/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

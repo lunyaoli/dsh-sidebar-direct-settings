@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Direct settings button",
+    "description": "Removes the sidebar account \"More\" menu so the built-in Settings button opens Settings directly, with no popup."
+  }
+}
